@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="app" style="display: flex; flex-direction: column; width: 200px;"></div>
+
+    <!-- React live example (DOM) -->
+    <script type="module" lang="jsx">
+        import * as ReactDOM from "react-dom";
+
+        const elements = <>
+            <input type="button" value="Paramètres"/>
+            <input type="button" value={"Paramètres"}/>
+        </>;
+
+        ReactDOM.render(elements, document.querySelector('#app'));
+    </script>
+
+    <!-- Even simpler example -->
+    <script type="module" lang="jsx">
+        const café0 = (<img alt="café"/>).props.alt;
+        const café1 = (<img alt={"café"}/>).props.alt;
+
+        console.log("café0 = %s, café1 = %s", café0, café1); // « café0 = caf\xe9, café1 = café »
+    </script>
+</body>
+</html>

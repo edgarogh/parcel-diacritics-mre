@@ -1,0 +1,19 @@
+{
+  "name": "parcel-diacritics-mre",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "parcel serve index.html --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC0",
+  "private": true,
+  "devDependencies": {
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "parcel": "^2.0.0-rc.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
